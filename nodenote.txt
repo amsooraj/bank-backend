@@ -1,0 +1,56 @@
+Node Js :- Run time enviromnent + JS library / Backend Technology
+
+- To create client server application
+
+- Features of node
+    - Extremely fast ; because node js using google chrome's engine to build it
+    - It works as Asynchronous and event driven
+    - It is single threaded
+    - Highly Scalable
+    - There is no Buffering
+    - It is a open source technology
+
+Node js Parts
+    - Global Object ; anyone can access eg. setTimeout() , console.log()
+    - Modules ; to access a file in another file , in that case we have to export file from that file and import it where we have to use eg. require() inbuilt import function
+        - Build in :-
+            - fs
+            - path
+            - process : enviromnental variable
+            - http
+            - https
+            - event
+            - crypto
+        - User defined modules : using module.exports for exporting and require for importing
+    - Packages : npm i package-name
+        - package.json : to create package.json npm init or npm init -y
+        - node_modules
+        - package-lock.json : 
+    Node Backend Concepts 
+        - Client-Server Architecture
+            - Server side
+            - http
+        - API
+        - CRUD : Create , Read , Update , Delete
+        - RestFul API
+        - CORS : Cross Origin Resource Sharing , to share data between diff port numbers
+    - Express : Framework of NodeJS
+        - Features
+            - Fast and minimalist
+        - Packages:-
+            - Express
+            - Cors
+            - .env 
+            - mongoose
+        - Mongoose : elegant mongodb object modeling for node.js
+        - Middleware : is a finction Used to control request-response cycle
+            - how to create a Middleware
+                -fuction name(req,res,next){}
+            - Application specific Middleware: works for all request
+                eg: express.json()
+            - Router specific middleware: work in specific routes
+        - Authorization : Using jsonwebtoken
+            - install json webtoken :npm i jsonwebtoken
+            - using jsonwebtoken, generate token in controller   
+                - generate token using sign()
+                - verify token in router specific middleware: verify(token,secret) 
